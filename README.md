@@ -14,8 +14,6 @@ A demo implementation can be found in this projects index.html file.
 ### Constructing the wrapper
 To construct the API wrapper, you'll need to provide a __host url__ (the API's domain), an __object of endpoints__ and if you desire, a __response type__ (Content-Type).
 
----
-
 #### Endpoints format - Required properties
 All endpoints should be listed in the endpoints object.
 
@@ -24,8 +22,6 @@ The endpoints object only requires two properties to function properly: __url__ 
 The __url__ property must be the trailing endpoint that this endpoint should hit, for example if I wanted to hit a __posts__ endpoint, my __url__ property would be equal to `/posts`.
 
 The __methods__ property is an __array__ of available HTTP methods that this endpoint has access to, for example my `/posts` endpoint has access to both __POST__ and __GET__, so my __methods__ property would be equal to `['POST', 'GET']`.
-
----
 
 #### API fetch format
 To fetch data from an endpoint, you can call `Api.fetch(method (string), endpoint (string), options (object))` - __The fetch method returns a promise__.
