@@ -28,7 +28,7 @@ The __methods__ property is an __array__ of available HTTP methods that this end
 ---
 
 #### API fetch format
-To fetch data from an endpoint, you can call `Api.fetch(method (string), endpoint (string), options (object))`.
+To fetch data from an endpoint, you can call `Api.fetch(method (string), endpoint (string), options (object))` - __The fetch method returns a promise__.
 
 When fetching data you may pass options to each endpoint as you desire, however there are reserved properties which perform special functions, these being __id__ (string), __filter__ (object) and __parent__ (string).
 
