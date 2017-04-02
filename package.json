@@ -1,0 +1,25 @@
+{
+  "name": "es6-api-wrapper",
+  "version": "0.0.1",
+  "description": "A basic ES6 API class that wraps the fetch function and allows for a more dynamic and robust interface to interact with any API - easily extendable and mighty flexible.",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jean-PierreGassin/es6-api-wrapper.git"
+  },
+  "keywords": [
+    "es6",
+    "api",
+    "wrapper",
+    "javascript"
+  ],
+  "author": "Jean-Pierre Gassin <jeanpierre.gassin@gmail.com> (https://jpgassin.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jean-PierreGassin/es6-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/Jean-PierreGassin/es6-api-wrapper#readme"
+}
