@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ES6 API Template</title>
+  </head>
+  <body>
+
+  </body>
+
+  <script src="api.js"></script>
+  <script>
+  const responseType = 'json';
+  const hostUrl = 'https://jsonplaceholder.typicode.com';
+  const endpoints = {
+    posts: {
+      url: '/posts',
+      methods: ['GET', 'POST'],
+    },
+    postComments: {
+      url: '/comments',
+      parent: 'posts',
+      methods: ['GET'],
+    },
+  };
+
+  const Api = new API(hostUrl, endpoints, responseType);
+
+  Api.fetch('POST', 'posts', {
+    title: 'foo',
+    body: 'bar',
+    userId: 1,
+  }).then((response) => {
+    console.log(response);
+  }).catch((error) => {
+    console.log(error);
+  });
+
+  Api.fetch('GET', 'posts', {
+    filter: {
+      userId: 1
+    }
+  }).then((response) => {
+    console.log(response);
+  }).catch((error) => {
+    console.log(error);
+  });
+
+  Api.fetch('GET', 'posts', { id: 1 }).then((response) => {
+    console.log(response);
+  }).catch((error) => {
+    console.log(error);
+  });
+
+  Api.fetch('GET', 'postComments', { id: 1 }).then((response) => {
+    console.log(response);
+  }).catch((error) => {
+    console.log(error);
+  });
+  </script>
+</html>
